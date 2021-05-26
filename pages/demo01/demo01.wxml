@@ -1,0 +1,6 @@
+<!--pages/demo01/demo01.wxml-->
+<view class="wbuserlist" wx:for="{{wbuserList}}" wx:key="{{index}}">
+  <view class="wbusername">微博名称：{{item.web_name}}</view>
+  <view class="wbuid">微博ID：{{item.web_uid}}</view>
+</view>
+  

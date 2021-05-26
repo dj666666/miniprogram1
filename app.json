@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/demo01/demo01",
+    "pages/demo02/demo02"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "丁杰的小程序",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/tabBar/home.png",
+      "selectedIconPath": "images/tabBar/home_on.png"
+    },
+    {
+      "pagePath": "pages/demo01/demo01",
+      "text": "demo01",
+      "iconPath": "images/tabBar/cate.png",
+      "selectedIconPath": "images/tabBar/cate_on.png"
+    },
+    {
+      "pagePath": "pages/demo02/demo02",
+      "text": "demo02",
+      "iconPath": "images/tabBar/cate.png",
+      "selectedIconPath": "images/tabBar/cate_on.png"
+    }],
+    "color": "#0094ff",
+    "selectedColor": "#ff9400"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

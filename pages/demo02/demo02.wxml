@@ -1,0 +1,40 @@
+<!--pages/demo02/demo02.wxml-->
+<!-- 1 text 相当于以前的web中的 span标签 行内元素 不会换行 
+     2 view 相当于以前的web中的 div标签 块级元素 会换行 
+-->
+<view>一个div</view>
+<view>{{msg}}</view>
+<view>{{num}}</view>
+<!-- 对象 -->
+<view>{{persion.age}}</view>
+<view>{{persion.height}}</view>
+<view>{{persion.weigth}}</view>
+<view>{{persion.name}}</view>
+<!-- 在标签中使用 -->
+<view data-num="{{num}}">在标签中使用</view>
+
+<!-- bool类型充当属性 -->
+<view>
+  <checkbox checked="{{isChecked}}"></checkbox>
+</view>
+
+<!-- 运算 -->
+<!-- 1 数字加减乘除 -->
+<view>{{1+1}}</view>
+<!-- 2 字符串拼接 -->
+<view>{{"1"+"1"}}</view>
+<!-- 3 三目运算 -->
+<view>{{ 11%2 === 0 ? '偶数':'奇数'}}</view>
+
+<!-- 4 列表渲染
+      1 wx:for="{{数组或对象}}" wx:for-item="循环项的名称" wx:for-index="循环项的索引"
+-->
+<view>
+  <viw wx:for="{{list}}" wx:for-item="item" wx:key="id" wx:for-index="index">
+    索引：{{index}}
+    --
+    值：{{item.name}}
+    --
+    id：{{id}}
+  </viw>
+</view>
