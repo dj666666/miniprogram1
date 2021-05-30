@@ -4,7 +4,7 @@
     <button class="addbtn" bindtap="toDemo4">添加</button>
   </view>
   <!-- 列表区域 -->
-  <scroll-view scroll-y="true" class="listScroll">
+  <!-- <scroll-view scroll-y="true" class="listScroll"> -->
   
     <view class="wbuserlist" wx:for="{{wbuserList}}" wx:key="index">
       <view class="wbuserInfo">
@@ -12,7 +12,7 @@
         <text class="wbuid">微博ID：{{item.web_uid}}</text>
       </view>
     </view>
-  </scroll-view>
+  <!-- </scroll-view> -->
 </view>
 
   
