@@ -1,37 +1,46 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/logs/logs",
     "pages/demo01/demo01",
-    "pages/demo02/demo02"
-
+    "pages/demo02/demo02",
+    "pages/demo03/demo03",
+    "pages/demo04/demo04"
   ],
-  "window":{
-    "backgroundTextStyle":"dark",
+  "window": {
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "丁杰的小程序",
-    "navigationBarTextStyle":"black",
-    "enablePullDownRefresh":true
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
   },
   "tabBar": {
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "首页",
-      "iconPath": "images/tabBar/home.png",
-      "selectedIconPath": "images/tabBar/home_on.png"
-    },
-    {
-      "pagePath": "pages/demo01/demo01",
-      "text": "demo01",
-      "iconPath": "images/tabBar/cate.png",
-      "selectedIconPath": "images/tabBar/cate_on.png"
-    },
-    {
-      "pagePath": "pages/demo02/demo02",
-      "text": "demo02",
-      "iconPath": "images/tabBar/cate.png",
-      "selectedIconPath": "images/tabBar/cate_on.png"
-    }],
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/images/tabBar/home.png",
+        "selectedIconPath": "static/images/tabBar/home_on.png"
+      },
+      {
+        "pagePath": "pages/demo01/demo01",
+        "text": "demo01",
+        "iconPath": "static/images/tabBar/cate.png",
+        "selectedIconPath": "static/images/tabBar/cate_on.png"
+      },
+      {
+        "pagePath": "pages/demo02/demo02",
+        "text": "demo02",
+        "iconPath": "static/images/tabBar/cate.png",
+        "selectedIconPath": "static/images/tabBar/cate_on.png"
+      },
+      {
+        "pagePath": "pages/demo03/demo03",
+        "text": "demo03",
+        "iconPath": "static/images/tabBar/cate.png",
+        "selectedIconPath": "static/images/tabBar/cate_on.png"
+      }
+    ],
     "color": "#0094ff",
     "selectedColor": "#ff9400"
   },

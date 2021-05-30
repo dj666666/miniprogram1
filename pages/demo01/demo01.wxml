@@ -1,6 +1,18 @@
 <!--pages/demo01/demo01.wxml-->
-<view class="wbuserlist" wx:for="{{wbuserList}}" wx:key="{{index}}">
-  <view class="wbusername">微博名称：{{item.web_name}}</view>
-  <view class="wbuid">微博ID：{{item.web_uid}}</view>
+<view class="body">
+  <view class="addwbuser">
+    <button class="addbtn" bindtap="toDemo4">添加</button>
+  </view>
+  <!-- 列表区域 -->
+  <scroll-view scroll-y="true" class="listScroll">
+  
+    <view class="wbuserlist" wx:for="{{wbuserList}}" wx:key="index">
+      <view class="wbuserInfo">
+        <text class="wbusername">微博名称：{{item.web_name}}</text>
+        <text class="wbuid">微博ID：{{item.web_uid}}</text>
+      </view>
+    </view>
+  </scroll-view>
 </view>
+
   

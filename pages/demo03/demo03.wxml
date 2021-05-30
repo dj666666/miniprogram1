@@ -1,0 +1,16 @@
+<!--pages/demo03/demo03.wxml-->
+<view class="demo3page">
+  <image class="avatarimg" src="/static/images/img1.jpg"></image>
+  <text class="username">测试页面</text>
+  <!-- 事件绑定 bindtap 和 catchtap -->
+  <!-- <view class="gostudy" bindtap="handleParent">
+    <text bindtap="handleChild">hello world</text>
+  </view> -->
+
+  <view class="gostudy">
+    <text bindtap="toDemo4">hello world</text>
+  </view>
+
+  <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取用户信息</button>
+</view>
+

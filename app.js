@@ -34,7 +34,7 @@ App({
     })
   },
   onShow:function(){
-    console.log('丁杰的小程序启动啦');
+    console.log('小程序启动啦');
   },
   globalData: {
     userInfo: null

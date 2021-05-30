@@ -1,4 +1,8 @@
+const util = require("../../utils/util")
+
 // pages/demo01/demo01.js
+import request from '../../utils/request'
+
 Page({
 
   /**
@@ -27,7 +31,7 @@ Page({
         this.setData({
           wbuserList : this.data.wbuserList.concat(res.data.data.list),
         });
-      
+        
         console.log(this.wbuserList)
       }
     })
@@ -52,13 +56,22 @@ Page({
 
   },
 
+  toDemo4(){
+    wx.navigateTo({
+      url: '/pages/demo04/demo04',
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: async function (options) {
     
-    this.getOrderList(1,10);
-    
+    let result = await request('http://my.d2anan.cn/api/bihu/getWebList',{'page':1,'limit':100});
+    this.setData({
+      wbuserList:result.data.list
+    })
+    console.log('数据结果：',result);
     //this.wbuserList = res.list;
   },
 

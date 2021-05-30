@@ -1,0 +1,13 @@
+<view class="addform">
+  <view class="input-content">
+      <view class="input-item">
+        <text class="tit">微博名称:</text>
+        <input type="text" placeholder="请输入名称" data-type="web_name" id="web_name" bindinput="handleInput"/>
+      </view>
+      <view class="input-item">
+        <text class="tit">微博uid:</text>
+        <input type="text"  placeholder="请输入uid" id="web_uid" bindinput="handleInput"/>
+      </view>
+    </view>
+    <button class="confirm-btn" bindtap="addwbuser">提交</button>
+</view>

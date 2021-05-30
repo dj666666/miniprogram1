@@ -1,4 +1,25 @@
 /* pages/demo01/demo01.wxss */
-.wbuserlist{
-  height: 100rpx;
+.wbuserInfo{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+  position: relative;
+  margin-bottom: 30rpx;
+  border-bottom: 1rpx solid #DEDEDE;
+}
+
+.wbusername{
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 32rpx;
+  max-width: 400rpx;/*最长文本长度*/
+  white-space: nowrap;/*不允许换行*/
+  overflow: hidden;/*超过部分隐藏*/
+  text-overflow: ellipsis;/*超过部分换为省略号*/
+  
+}
+
+.addbtn{
+  width: 100rpx;
+  height: 80rpx;
 }
